@@ -17,7 +17,7 @@ _Toolboxes/Functions_
   
 **Example data**
 
-After cloning the repository, you can run all scripts with the example data provided (see /example_data/) by adding the path at the beginning of the scripts. One example fNIRS dataset is provided. The WTC pipeline and analysis scripts also incorporate input from Excel files, such as excluded channels identified manually, background information about participants (e.g., children's ages), and behavioural data (e.g., collaborative task performance, parent-report questionnaire data). Templates for these file structures are also provided.
+After cloning the repository, you can run all scripts with the example data provided (see /example_data/) by adding the path at the beginning of the scripts. Example fNIRS dataset forthcoming. The WTC pipeline and analysis scripts also incorporate input from Excel files, such as excluded channels identified manually, background information about participants (e.g., children's ages), and behavioural data (e.g., collaborative task performance, parent-report questionnaire data). Templates for these file structures are also provided.
 
 **Structure**
 
