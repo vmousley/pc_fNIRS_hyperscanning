@@ -14,7 +14,7 @@ Input = pre-processed fNIRS data from children and mothers
 Output = true and phase-scrambled pseudodyad WTC data as labelled .structs
 
 Must specify:
-    - Line 30 for number of desired pseudo dyad iterations. If not running
+    - Line 31 for number of desired pseudo dyad iterations. If not running
     phase-scrambled pseudodyad analysis, set to 0.
     - Line 32 for SSC regression if desired ('true' if yes, 'false' if
     not). NB: Setting ssc reg = true means physiological regression will
