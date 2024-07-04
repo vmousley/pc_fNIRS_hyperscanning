@@ -9,9 +9,6 @@ Set your study-specific paths & variables to run the WTC pipeline.
 %}
 
 % Paths
-analysisPath = '\Users\vmousley\Documents\MATLAB\collaborationPilot\github_repo\example_data\';
-basePath = '\Users\vmousley\Documents\MATLAB\collaborationPilot\github_repo\example_data\';
-exportPath = 'C:\Users\vmousley\Documents\MATLAB\collaborationPilot\github_repo\example_data\';
 
 % analysisPath = '\set\your\path'; % <<<<<<< SET
 % basePath = '\set\your\path\'; % <<<<<<< SET
