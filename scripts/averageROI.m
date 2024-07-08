@@ -7,9 +7,9 @@ Email: v.mousley@bbk.ac.uk
 This function averages available long-separation channels within ROIs.
 
 Inputs: 
-    data =
-    region = 
-    regionName = 
+    data = fNIRS data
+    region = region var as specified in config.m
+    regionName = string for region name
 
 %}
 
