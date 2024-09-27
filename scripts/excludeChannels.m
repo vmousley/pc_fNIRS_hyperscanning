@@ -1,8 +1,8 @@
 %% Exclude Noisy Channels
 %{
 
-Written by Victoria Mousley, Centre for Brain and Cognitive Development
-Email: v.mousley@bbk.ac.uk
+Written by Victoria St. Clair, Centre for Brain and Cognitive Development
+Email: v.stclair@bbk.ac.uk
 
 This script identifies noisy channels specified in Excel sheet
 to exclude before WTC calculation for expediency. 
