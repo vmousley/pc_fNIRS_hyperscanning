@@ -1,8 +1,8 @@
 % ROI-Wise WTC
 %{
 
-Written by Victoria Mousley, Centre for Brain and Cognitive Development
-Email: v.mousley@bbk.ac.uk
+Written by Victoria St. Clair, Centre for Brain and Cognitive Development
+Email: v.stclair@bbk.ac.uk
 
 This script averages fNIRS signals within regions across available 
 long-separation channels.
