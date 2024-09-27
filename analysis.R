@@ -1,6 +1,6 @@
 #########################################################################
 ####### Parent-child fNIRS WTC hyperscanning analysis script ############
-######### Written by Victoria Mousley (v.mousley@bbk.ac.uk) #############
+######### Written by Victoria St. Clair (v.stclair@bbk.ac.uk) #############
 #########################################################################
 
 # Libraries -----
