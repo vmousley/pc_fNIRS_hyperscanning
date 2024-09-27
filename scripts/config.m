@@ -1,8 +1,8 @@
 %% Config file for WTC Pipeline
 %{
 
-Written by Victoria Mousley, Centre for Brain and Cognitive Development
-Email: v.mousley@bbk.ac.uk
+Written by Victoria St. Clair, Centre for Brain and Cognitive Development
+Email: v.stclair@bbk.ac.uk
 
 Set your study-specific paths & variables to run the WTC pipeline. 
 
