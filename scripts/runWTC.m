@@ -1,9 +1,9 @@
 %% Main WTC Script
 %{
 
-Written by Victoria Mousley, Centre for Brain and Cognitive Development
+Written by Victoria St. Clair, Centre for Brain and Cognitive Development
 and Letizia Contini, Politecnico di Milano
-Email: v.mousley@bbk.ac.uk
+Email: v.stclair@bbk.ac.uk
 
 This script runs the main fNIRS WTC pipeline supporting Mousley et al. 
 (under review). Analytical pipeline optimisation in developmental fNIRS 
