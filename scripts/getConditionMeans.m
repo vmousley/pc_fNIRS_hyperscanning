@@ -165,7 +165,7 @@ for k = 1:numel(data.End_Rest)
             elseif numel(data.ROIs_Rsq{i,j}) < endIndex
                 meanRestROIs{1,k}(i,j) = NaN;
             else
-                meanRestROIs{1,k}(i,j) = nanmean(data.ROIs_Rsq{i,j}(:,startIndex:endIndex));
+                meanRestROIs{1,k}(i,j) = nanmean(data.ROIs_Rsq{i,j}(:,startIndex:endIndex),2);
             end
         end
     end
