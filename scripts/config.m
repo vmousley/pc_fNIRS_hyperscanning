@@ -10,9 +10,9 @@ Set your study-specific paths & variables to run the WTC pipeline.
 
 % Paths
 
-% analysisPath = '\set\your\path'; % <<<<<<< SET
-% basePath = '\set\your\path\'; % <<<<<<< SET
-% exportPAth = '\set\your\path'; % <<<<<<< SET
+% analysisPath = '\set\your\path'; % <<<<<<< SET to desired analysis data save location
+% basePath = '\set\your\path\'; % <<<<<<< SET to pre-processed data location
+% exportPath = 'analysisPath';
 
 % Number of channels
 chanNum = 18;
