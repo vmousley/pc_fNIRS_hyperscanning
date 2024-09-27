@@ -1,6 +1,6 @@
-Code repository for Mousley, V. L., Contini, L., Re, R., Pinti, P. & Mareschal, D. (under review). Analytical pipeline optimisation in developmental fNIRS hyperscanning data: Neural coherence between preschoolers collaborating with their mothers. 
+Code repository for St. Clair, V. L., Contini, L., Re, R., Pinti, P. & Mareschal, D. (under review). Analytical pipeline optimisation in developmental fNIRS hyperscanning data: Neural coherence between preschoolers collaborating with their mothers. 
 
-Please contact Victoria Mousley with any questions (v.mousley@bbk.ac.uk).
+Please contact Victoria St. Clair with any questions (v.stclair@bbk.ac.uk).
 
 **Requirements**
 
@@ -35,4 +35,4 @@ After cloning the repository, you can run all scripts with the example data prov
 ***Statistical Analysis***
 1. analysis.R = statistical analysis script
   - unpacks MATLAB structs for manipulation in R;
-  - runs analyses for each aim presented in Mousley et al. (under review)
+  - runs analyses for each aim presented in St. Clair et al. (under review)
