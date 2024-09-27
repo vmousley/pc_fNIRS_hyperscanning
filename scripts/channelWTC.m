@@ -1,8 +1,8 @@
 %% Channel-Wise WTC
 %{
 
-Written by Victoria Mousley, Centre for Brain and Cognitive Development
-Email: v.mousley@bbk.ac.uk
+Written by Victoria St. Clair, Centre for Brain and Cognitive Development
+Email: v.stclair@bbk.ac.uk
 
 This script takes estimates the wavelet transform coherence, calculated using
 the analytic Morlet wavelet, between every possible valid channel-to-channel
