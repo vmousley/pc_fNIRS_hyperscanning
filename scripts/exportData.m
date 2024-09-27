@@ -1,8 +1,8 @@
 %% Export WTC Analysis Data
 %{
 
-Written by Victoria Mousley, Centre for Brain and Cognitive Development
-Email: v.mousley@bbk.ac.uk
+Written by Victoria St. Clair, Centre for Brain and Cognitive Development
+Email: v.stclair@bbk.ac.uk
 
 This script exports WTC pipeline output for analysis in R.
 
