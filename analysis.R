@@ -601,10 +601,10 @@ hbr_roi_df <- hbr_roi_df[!hbr_roi_df$id %in% removeHbrROI$id, ]
 
 # you should remove any manually here that you know need to be excluded
 # in this case, removed for < 1 valid ROI per participant
-hbo_roi_df <- hbo_roi_df %>% dplyr::filter(id != 'C06M06' & id != 'C43M43')
+hbo_roi_df <- hbo_roi_df %>% dplyr::filter(id != 'XXXX' & id != 'XXXX')
 length(unique(hbo_roi_df$id))
 
-hbr_roi_df <- hbr_roi_df %>% dplyr::filter(id != 'C06M06' & id != 'C43M43')
+hbr_roi_df <- hbr_roi_df %>% dplyr::filter(id != 'XXXX' & id != 'XXXX')
 length(unique(chansHbr$id))
 
 hbo_roi_df$conditionReleveled <- as.factor(hbo_roi_df$condition)
