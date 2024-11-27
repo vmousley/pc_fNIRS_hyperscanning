@@ -142,21 +142,21 @@ removeHbrSSC <- chansHbrSSC %>%
 
 chansHbrSSC <- chansHbrSSC[!chansHbrSSC$id %in% removeHbrSSC$id, ]
 
-# remove manually two dyads (in the case of this study) 
-# for failure to meet channel-wise inclusion of > 1 valid ROI per participant
+# remove manually dyads for failure to meet channel-wise inclusion 
+# of > 1 valid ROI per participant by replacing XXXX with your dyad #s to exclude
 
-chansHbo <- chansHbo %>% dplyr::filter(id != 'C06M06' & id != 'C43M43')
+chansHbo <- chansHbo %>% dplyr::filter(id != 'XXXX' & id != 'XXXX')
 
 # check that you have the number of participants you're expecting
 length(unique(chansHbo$id))
 
-chansHbr <- chansHbr %>% dplyr::filter(id != 'C06M06' & id != 'C43M43')
+chansHbr <- chansHbr %>% dplyr::filter(id != 'XXXX' & id != 'XXXX')
 length(unique(chansHbr$id))
 
-chansHboSSC <- chansHboSSC %>% dplyr::filter(id != 'C06M06' & id != 'C43M43')
+chansHboSSC <- chansHboSSC %>% dplyr::filter(id != 'XXXX' & id != 'XXXX')
 length(unique(chansHboSSC$id))
 
-chansHbrSSC <- chansHbrSSC %>% dplyr::filter(id != 'C06M06' & id != 'C43M43')
+chansHbrSSC <- chansHbrSSC %>% dplyr::filter(id != 'XXXX' & id != 'XXXX')
 length(unique(chansHbrSSC$id))
 
 # Aim 1: SSC impact ------------
