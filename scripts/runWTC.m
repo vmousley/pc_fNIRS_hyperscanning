@@ -5,9 +5,9 @@ Written by Victoria St. Clair, Centre for Brain and Cognitive Development
 and Letizia Contini, Politecnico di Milano
 Email: v.stclair@bbk.ac.uk
 
-This script runs the main fNIRS WTC pipeline supporting Mousley et al. 
+This script runs the main fNIRS WTC pipeline supporting St. Clair et al. 
 (under review). Analytical pipeline optimisation in developmental fNIRS 
-hyperscanning data: Neural coherence between preschoolers collaborating 
+hyperscanning data: Neural coherence between four- to six-year-olds collaborating 
 with their mothers. 
 
 Input = pre-processed fNIRS data from children and mothers
@@ -29,7 +29,7 @@ clc
 
 %% SET DESIRED PARAMETERS %%
 totalIterations=0; % <<<< SET to number of desired phase-scrambling iterations
-SSCR_ON = true; % <<<< SET to true if SSC regression desired, otherwise false
+SSCR_ON_set = true; % <<<< SET to true if SSC regression desired, otherwise false
  
 %%
 config;
@@ -38,14 +38,16 @@ outputPath = analysisPath;
 dyadFolders = dir(fullfile(inputPath, 'Dyad*'));
 totalDyadsNumber=size(dyadFolders,1);
 
-if SSCR_ON == true
-    sscReg = 'sscRegressed';
-else
-    sscReg = 'raw';
-end
-
 %%
 for i = 1:numel(dyadFolders) 
+    SSCR_ON = SSCR_ON_set;
+
+    if SSCR_ON == true
+        sscReg = 'sscRegressed';
+    else
+        sscReg = 'raw';
+    end
+
     dyadFolder = dyadFolders(i).name;
     dyadFolderPath = fullfile(inputPath, dyadFolder);
     cFolder = fullfile(dyadFolderPath, sprintf('C%s', dyadFolder(5:end))); % child data
@@ -75,9 +77,11 @@ for i = 1:numel(dyadFolders)
                 fprintf('SSC reg set but no valid data. Resetting SSC arg to false. \n')
             else
                 fprintf('Proceeding into pipeline with SSC regression. \n')
+                sscReg = 'sscRegressed';
             end
         elseif SSCR_ON == 0
             fprintf('SSC regression false. Proceeding without regression. \n')
+            sscReg = 'raw';
         end
 
         % calculate ROI-wise WTC
