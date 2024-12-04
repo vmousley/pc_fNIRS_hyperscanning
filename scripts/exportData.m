@@ -7,8 +7,8 @@ Email: v.stclair@bbk.ac.uk
 This script exports WTC pipeline output for analysis in R.
 
 Must specify line 22 depending on what kinds of data you want to export.
-    - '*FINAL_sscRegressed_hbo*' for hbo data with SSC regression
-    - '*FINAL_sscRegressed_hbr*' for hbr data with SSC regression
+    - 'FINAL*_sscRegressed_hbo*' for hbo data with SSC regression
+    - 'FINAL*_sscRegressed_hbr*' for hbr data with SSC regression
     - '*_raw_hbo*' for hbo data without SSC regression
     - '*_raw_hbr*' for hbr data without SSC regression
     - '*PDA*hbo*' for hbo pseudodyad data
