@@ -775,19 +775,6 @@ removePDAHbrROI <- hbr_pda_roi %>%
 
 hbr_pda_roi <- hbr_pda_roi[!hbr_pda_roi$id %in% removePDAHbrROI$id, ]
 
-# 06, 43 should be removed for ROI exclusion
-hbo_pda <- hbo_pda %>% dplyr::filter(id != 'C06M06'& 
-                                       id != 'C43M43')
-
-hbr_pda <- hbr_pda %>% dplyr::filter(id != 'C06M06'& 
-                                       id != 'C43M43')
-
-hbo_pda_roi <- hbo_pda_roi %>% dplyr::filter(id != 'C06M06'& 
-                                       id != 'C43M43')
-
-hbr_pda_roi <- hbr_pda_roi %>% dplyr::filter(id != 'C06M06'& 
-                                       id != 'C43M43')
-
 names(hbo_pda)[names(hbo_pda)=='meanCoherence'] <- 'pda_coherence'
 hbo_pda$trialReleveled <- as.factor(hbo_pda$trial)
 
@@ -920,9 +907,8 @@ channelPairs_t_tests_hbo_pda <- adjust_pvalue(channelPairs_t_tests_hbo_pda, p.co
 
 channelPairs_t_tests_hbo_pda_sig <- channelPairs_t_tests_hbo_pda %>% filter(p < .05)
 
-# ROI-wise level, C23M23, C49M49, C54M54, C45M45 are weird 
+# ROI-wise level
 roi_t_tests_hbo_pda <- hbo_pda_roi2 %>%
-  dplyr::filter(id != 'C23M23' & id != 'C49M49' & id != 'C54M54' & id != 'C45M45') %>%
   dplyr::group_by(id, pair, coherence_type, conditionReleveled) %>%
   dplyr::mutate(avCoh = mean(coherence_value)) %>%
   dplyr::ungroup() %>%
@@ -959,9 +945,8 @@ channelPairs_t_tests_hbr_pda <- adjust_pvalue(channelPairs_t_tests_hbr_pda, p.co
 
 channelPairs_t_tests_hbr_pda_sig <- channelPairs_t_tests_hbr_pda %>% filter(p < .05)
 
-# ROI-wise level, C23M23, C49M49, C54M54, C45M45 are weird 
+# ROI-wise level
 roi_t_tests_hbr_pda <- hbr_pda_roi2 %>%
-  dplyr::filter(id != 'C23M23' & id != 'C49M49' & id != 'C54M54' & id != 'C45M45') %>%
   dplyr::group_by(id, pair, coherence_type, conditionReleveled) %>%
   dplyr::mutate(avCoh = mean(coherence_value)) %>%
   dplyr::ungroup() %>%
