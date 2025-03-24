@@ -1,4 +1,4 @@
-Code repository for St. Clair, V. L., Contini, L., Re, R., Pinti, P. & Mareschal, D. (under review). Analytical pipeline optimisation in developmental fNIRS hyperscanning data: Neural coherence between preschoolers collaborating with their mothers. 
+Code repository for St. Clair, V., Contini, L., Re, R., Pinti, P. & Mareschal, D. (2025). Analytical pipeline optimisation in developmental fNIRS hyperscanning data: Neural coherence between 4- to 6-year-olds collaborating with their mothers. _Imaging Neuroscience_, https://doi.org/10.1162/imag_a_00509
 
 Please contact Victoria St. Clair with any questions (v.stclair@bbk.ac.uk).
 
