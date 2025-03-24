@@ -36,4 +36,4 @@ After cloning the repository, you can run all scripts with the example data prov
 ***Statistical Analysis***
 1. analysis.R = statistical analysis script
   - unpacks MATLAB structs for manipulation in R;
-  - runs analyses for each aim presented in St. Clair et al. (under review)
+  - runs analyses for each aim presented in St. Clair et al. (2025)
